@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EOE Genuine Automobiles</title>
+    <!-- Link to Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/img/0.png" alt="EOE Genuine Automobiles Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/eoe-genuine"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/eoe_genuine" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+        </nav>
+    </header>
+    
+
+    <!-- Main Section -->
+    <section id="home" class="main-section">
+        <div class="content">
+            <h1>Welcome to EOE Genuine Automobiles</h1>
+            <p>Your reliable partner in electric vehicle conversions and automotive solutions.</p>
+        </div>
+    </section>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Toggle active class
+            if (navLinks.style.display === 'block') {
+                navLinks.style.display = 'none'; // Hide menu
+            } else {
+                navLinks.style.display = 'block'; // Show menu
+            }
+        });
+    </script>
+    <section class="about" id="about">
+        <div class="content">
+            <h2>About EOE Genuine</h2>
+            <p>EOE Genuine is a pioneering startup dedicated to transforming vehicle efficiency through innovative solutions. Our core focus areas include:</p>
+            <ul>
+                <li><strong>Advanced Controller Units (ECUs):</strong> Developing cutting-edge ECUs to enhance performance and fuel efficiency in both electric and traditional vehicles.</li>
+                <li><strong>Electric Vehicle Conversions:</strong> Offering services to convert petrol and diesel vehicles into electric models, promoting sustainable transportation options.</li>
+                <li><strong>Mechanics Training and Workshops:</strong> Providing specialized training programs and workshops for mechanics to upskill in the latest automotive technologies.</li>
+                <li><strong>Spare Parts Supply:</strong> Supplying essential spare parts, including sensors and batteries, to support vehicle maintenance and conversions.</li>
+                <li><strong>Web Solutions for Automotive Professionals:</strong> Delivering tailored web services to enhance the online presence and operational efficiency of automotive businesses.</li>
+            </ul>
+            <p>Established in 2023, EOE Genuine is committed to driving automotive innovation and contributing to a more sustainable future. Connect with us on LinkedIn to stay updated on our latest initiatives and offerings.</p>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fa fa-car"></i>
+                    <h3>Electric Conversion</h3>
+                    <p>Convert your petrol or diesel vehicle into an efficient electric vehicle with our state-of-the-art conversion technology.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-tools"></i>
+                    <h3>Mechanic Training & Workshops</h3>
+                    <p>We provide hands-on training and workshops to mechanics, equipping them with the knowledge to handle EVs and advanced technologies.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-cogs"></i>
+                    <h3>Spare Parts Supply</h3>
+                    <p>We supply high-quality spare parts like sensors, batteries, and more to ensure the smooth operation of electric and traditional vehicles.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fa fa-laptop"></i>
+                    <h3>Web Solutions</h3>
+                    <p>Our web solutions provide a comprehensive digital platform for service bookings, part sourcing, and tracking vehicle performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Fill up the form given below to contact us</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>123 EV Avenue, Tech City, Country</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+91 8964005644</p>
+                    </div>
+                </div>
+                <div class="box"> 
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>support@eoegenuine.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form> 
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EOE Genuine Automobiles. All rights reserved.</p>
+    </footer>
+    
+    
+    
+</body>
+</html>
