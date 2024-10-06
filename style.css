@@ -1,0 +1,493 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Sticky Navigation Bar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar .logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Social Icons in Navbar */
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00aced; /* Twitter Blue for example */
+}
+
+/* Main Section */
+
+
+.main-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/img/2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.main-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Adjust opacity for blending */
+    mix-blend-mode: multiply;
+}
+
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About Section Styles */
+.about {
+    padding: 50px 20px;
+    background-color: #000; /* Light gray background for contrast */
+    color: #333;
+}
+
+.about .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.about ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about ul li {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.about ul li strong {
+    color: #969697;
+}
+
+.about p:last-of-type {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+/* Services Section */
+.services {
+    background-color: #000; /* Black background */
+    padding: 60px 20px;
+    color: white;
+}
+
+.services h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #fff; /* White text */
+    text-align: center; /* Center heading */
+}
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between items */
+}
+
+.service-item {
+    width: 22%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for effect */
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-item i {
+    font-size: 40px;
+    color: #00bcd4;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service-item p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Hover Effect */
+.service-item:hover {
+    background-color: #00bcd4; /* Changes background on hover */
+    transform: scale(1.05); /* Adds a zoom effect */
+}
+
+.service-item:hover h3, .service-item:hover p {
+    color: #fff; /* Change text color on hover */
+}
+
+.service-item:hover i {
+    color: #000; /* Changes icon color on hover */
+}
+
+/* Contact Section */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000; /* Black background */
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff; /* White text */
+}
+
+.contact .content p {
+    font-weight: 300;
+    color: #fff; /* White text */
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Enables responsiveness */
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff; /* White background for icons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #000; /* Black icon color */
+}
+
+.container .contactInfo .box .text {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #979696;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for form */
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #00bcd4;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Scroll Effect */
+.scroll-effect {
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.6s ease-in-out; /* Fade in effect */
+}
+
+.scroll-effect.visible {
+    opacity: 1; /* Become visible */
+}
+
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex; /* Flex for desktop view */
+}
+
+/* Hamburger Icon Styles */
+.hamburger {
+    display: none; /* Hide hamburger by default */
+    cursor: pointer;
+}
+
+/* Media Queries */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p, .about ul li {
+        font-size: 1rem;
+    }
+        .service-item {
+            width: 45%; /* Adjusts the width for smaller screens */
+        }
+    
+        .service-item {
+            width: 100%; /* Full width on very small screens */
+        }
+    
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .container .contactInfo, .contactForm {
+            width: 100%;
+        }
+    
+        .contactForm {
+            margin-top: 20px;
+        }
+        .nav-links {
+            position: absolute;
+            top: 60px; /* Adjust based on your header height */
+            left: 0;
+            right: 0;
+            background-color: #333; /* Background color for mobile menu */
+            flex-direction: column; /* Stack links vertically */
+            display: none; /* Hide by default */
+        }
+        .nav-links.active {
+            display: flex; /* Show links when active */
+            max-height: 300px; 
+        }
+        .nav-links li {
+            display: block; /* Show links in mobile */
+            padding: 10px;
+            text-align: center; /* Center align text */
+        }
+    
+        .hamburger {
+            display: block; /* Show hamburger icon on mobile */
+        }
+        .social-icons-mobile {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    
+        /* Hide the regular nav links on mobile */
+        .nav-links li {
+            display: none; /* Hide links initially */
+        }
+    
+        .nav-links.active li {
+            display: block; /* Show links when active */
+        }
+    }
