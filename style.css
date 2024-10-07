@@ -83,7 +83,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/img/2.jpg');
+    background-image: url('./img/2.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
